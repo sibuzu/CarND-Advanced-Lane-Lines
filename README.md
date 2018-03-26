@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 * 01-camcal_and_perspective_transform.ipynb: the processing to calculate the camera calibration matrix and perspective transform matrix
 * 02-advance_lane_lines.ipynb: the processing to finding the land lines
 
-## Camera Calibration
+## Camera Calibration And Perspective Transform
 ---
 
 #### 1. computing the camera matrix and distortion coefficients
@@ -50,7 +50,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 </tr>
 </table>
 
-### 2. performed a perspective transform.
+### 2. performed a perspective transform
 
 The code for my perspective transform includes a function called `warper()` in the file `01-camcal_and_perspective_transform.ipynb`.  The `warper()` function takes as inputs an image (`img`), as well as source (`srcpts`) and destination (`dstpts`) points.  I chose the "test_images/straight_lines1.jpg" as my reference image.  I undistored the the image using the camera calibration parameters got in the last section.  Then the hardcode the source and destination points are in the following manner:
 
@@ -92,3 +92,7 @@ The following shows the results:
 <td><center>warped image</center></td>
 </tr>
 </table>
+
+### 3. store coefficients
+
+The camera coefficients `mtx` and `dist`, and the perspective transform matrix `M` are stored in the file `camera_cal/dist_pickle.p` for the later use in the `02-advance_lane_lines.ipynb`
