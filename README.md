@@ -350,4 +350,6 @@ The code is in the section `6. Draw lane line boundaries` of `02-advance_lane_li
 The code is in the section `Video Output` of `02-advance_lane_lines.ipynb`.  Here's [my video result](./output_videos/output_project_video.mp4) or on the [Youtube](https://youtu.be/0sv8BJrFkL0)
 
 
+## Discussion
 
+The project is more like a homework of Computer Vision. The tuning of the thresholds and parameters was very tedious.  Although my alogrithm might work on the above video but should fail on other videos, say challenge_video.mp4 and harder_challenge_video.mp4.   I knew we might do more tuning to make the alogrithm more robust on other cases.  But it was very inefficient to tune them manually.  There were too many cases to make these algorithms failed, such as night driving, quick curve turns, car over the lane lines, and so on.  I though it would be more proper and efficient to use deep learning, such as Faster R-CNN, YOLO, or SSD, on this project.  The next project Vehicle Detection might use these techniques.  If the schedule is allowed, we may use deep learning approaches on both Vehicle Detection and Lane Line Detection at the same time.
